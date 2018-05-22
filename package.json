@@ -1,0 +1,32 @@
+{
+  "name": "footoken",
+  "version": "0.0.1",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html --no-minify",
+    "dev": "parcel src/index.html",
+    "compile": "rm -rf ./build/* && truffle compile",
+    "test": "truffle test --network test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "foundation-sites": "^6.4.4-rc1",
+    "truffle-contract": "^3.0.5",
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-router": "^3.0.1",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^1.2.1",
+    "eslint-config-google": "^0.9.1",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.9.0",
+    "vue-template-compiler": "^2.5.16"
+  }
+}

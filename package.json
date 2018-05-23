@@ -7,10 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "build": "parcel build src/index.html --no-minify",
+    "build": "rm -rf ./docs/* && parcel build src/index.html --no-minify --out-dir docs --public-url ./",
     "dev": "parcel src/index.html",
     "compile": "rm -rf ./build/* && truffle compile",
-    "test": "truffle test --network test"
+    "test": "truffle test --network test",
+    "flat": "solidity_flattener --output FooTokenFlattened.sol contracts/FooToken.sol"
   },
   "author": "",
   "license": "MIT",
